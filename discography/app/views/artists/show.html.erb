@@ -4,5 +4,6 @@
   <%= @artist.name %> (<%= @artist.formation_year %>)
 </h1>
 
-<%= link_to 'Edit', edit_artist_path(@artist) %> |
-<%= link_to 'Back', artists_path %>
+<%= link_to('View Albums', artist_albums_path(@artist)) %> |
+<%= link_to('Edit', edit_artist_path(@artist)) %> |
+<%= link_to('Back', artists_path) %>

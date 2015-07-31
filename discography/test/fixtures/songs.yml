@@ -6,10 +6,12 @@
 #
 one:
   id: 100
-  name: "The Knife - Other"
-  formation_year: 1999
+  album_id: 100
+  name: "ABC"
+  duration: 10
 
 two:
   id: 101
-  name: "Sneaker Pimps - Other"
-  formation_year: 1999
+  album_id: 100
+  name: "DEF"
+  duration: 11

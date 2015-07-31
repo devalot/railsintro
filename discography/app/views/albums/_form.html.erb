@@ -1,0 +1,28 @@
+<%= form_for([@artist, @album]) do |f| %>
+  <% if @album.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @album.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label(:name) %>
+    <%= f.text_field(:name) %>
+  </p>
+
+  <p>
+    <%= f.label(:released_at) %>
+
+    <%= f.date_select(:released_at,
+                      start_year: 1920,
+                      end_year: Time.now.year) %>
+  </p>
+
+  <p class="actions">
+    <%= f.submit %>
+  </p>
+<% end %>

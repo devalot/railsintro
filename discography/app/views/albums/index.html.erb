@@ -1,0 +1,7 @@
+<ul>
+  <% @albums.each do |album| %>
+    <li><%= album.name %></li>
+  <% end %>
+</ul>
+
+<%= link_to("Create New Album", new_artist_album_path(@artist)) %>

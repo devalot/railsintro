@@ -21,3 +21,5 @@
 
 en:
   hello: "Hello world"
+  artists:
+    listing: "Listing Artists (from en.yml)"
